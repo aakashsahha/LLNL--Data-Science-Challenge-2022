@@ -8,4 +8,5 @@ Molecular docking is a method in computational chemistry to find molecule’s po
 
 Two different approaches were used for the task:
 
-1. 
+1. Screen compounds using SMILES and molecular descriptor
+2. Screen compounds using 3D atomic representation
