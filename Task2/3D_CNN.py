@@ -77,7 +77,8 @@ class CNNModel(nn.Module):
         #out = self.max_pool4(out)
 
         print(out.shape)
-        out = out.view(out.size(0), -1)
+        out = out.view(out.size(0), -1) # Flatten the data
+        # Alternatively: torch.nn.Flatten(start_dim=1, end_dim=- 1)
         
         print(out.shape)
         out = self.relu1(self.fc1(out))
